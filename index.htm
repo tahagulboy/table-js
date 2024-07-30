@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Table JS</h1>
+    <input type="file" id="fileInput" accept=".xlsx" />
+    <button id="addRow">Satır Ekle</button>
+    <button id="addColumn">Sütun Ekle</button>
+    <button id="deleteRow">Satır Sil</button>
+    <button id="deleteColumn">Sütun Sil</button>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Başlık 1</th>
+                <th>Başlık 2</th>
+                <th>Başlık 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td contenteditable="true">Veri 1</td>
+                <td contenteditable="true">Veri 2</td>
+                <td contenteditable="true">Veri 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="saveButton">XLSX Olarak Kaydet</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
